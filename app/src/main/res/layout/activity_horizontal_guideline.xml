@@ -7,7 +7,7 @@
     tools:context=".HorizontalGuidelineActivity">
 
     <!--
-        orientation:horizontal                                      縦方向に分割される。
+        orientation:horizontal                                      横方向に分割される。
         layout_constraintGuide_percent:0.3                          上側から30%の位置で分割される。
      -->
     <android.support.constraint.Guideline
