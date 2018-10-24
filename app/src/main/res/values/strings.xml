@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GuidelineSample</string>
+    <string name="left_side">Left Side</string>
+    <string name="right_side">Right Side</string>
+    <string name="vertical">vertical</string>
+    <string name="horizontal">horizontal</string>
+    <string name="cross">cross</string>
+    <string name="top_side">Top Side</string>
+    <string name="bottom_side">Bottom Side</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerticalGuidelineActivity">
+
+    <!--
+        orientation:vertical                                    縦方向に分割される。
+        layout_constraintGuide_percent:0.3                      左側から30%の位置で分割される。
+     -->
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <!--
+        layout_width:0dp                                        制約内で最大幅にする。
+        layout_height:100dp                                     適当に設定した。
+        layout_constraintLeft_toLeftOf:parent                   画面左側とテキストビューの左側を合わせる。
+        layout_constraintRight_toRightOf:@id/vertical_guideline Guidelineとテキストビューの右側を合わせる。(つまり左側30%の幅になる)
+     -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="@string/left_side"
+        android:background="@drawable/frame_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/vertical_guideline" />
+
+    <!--
+        layout_width:0dp                                        制約内で最大幅にする。
+        layout_height:100dp                                     適当に設定した。
+        layout_constraintLeft_toLeftOf:parent                   Guidelineとテキストビューの左側を合わせる。
+        layout_constraintRight_toRightOf:@id/vertical_guideline 画面右側とテキストビューの右側を合わせる。(つまり右側70%の幅になる)
+     -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="@string/right_side"
+        android:background="@drawable/frame_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_guideline"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

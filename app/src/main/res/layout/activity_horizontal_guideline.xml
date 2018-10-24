@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HorizontalGuidelineActivity">
+
+    <!--
+        orientation:horizontal                                      縦方向に分割される。
+        layout_constraintGuide_percent:0.3                          上側から30%の位置で分割される。
+     -->
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <!--
+        layout_width:100dp                                          適当に設定した。
+        layout_height:0dp                                           制約内で最大高にする。
+        layout_constraintTop_toTopOf:parent                         画面上側とテキストビューの上側を合わせる。
+        layout_constraintBottom_toBottomOf:@id/horizontal_guideline Guidelineとテキストビューの下側を合わせる。(つまり上側30%の高さになる)
+     -->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:text="@string/top_side"
+        android:background="@drawable/frame_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--
+        layout_width:100dp                                          適当に設定した。
+        layout_height:0dp                                           制約内で最大高にする。
+        layout_constraintTop_toTopOf:@id/horizontal_guideline       Guidelineとテキストビューの上側を合わせる。
+        layout_constraintBottom_toBottomOf:parent                   画面下側とテキストビューの下側を合わせる。(つまり下側70%の高さになる)
+     -->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:text="@string/bottom_side"
+        android:background="@drawable/frame_textview"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
