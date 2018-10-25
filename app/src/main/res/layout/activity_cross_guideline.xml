@@ -58,7 +58,7 @@
         app:layout_constraintLeft_toLeftOf="@id/vertical_0_guideline"
         app:layout_constraintRight_toLeftOf="@id/vertical_1_guideline" />
 
-    <!-- イカのアイコンは右下に配置 -->
+    <!-- 犬のアイコンは右下に配置 -->
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
