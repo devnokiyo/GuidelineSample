@@ -38,7 +38,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.66"/>
 
-    <!-- お猿のアイコンは右上に配置 -->
+    <!-- お猿のアイコンは左上に配置 -->
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
