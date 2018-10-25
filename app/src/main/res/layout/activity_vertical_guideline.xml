@@ -36,8 +36,8 @@
     <!--
         layout_width:0dp                                        制約内で最大幅にする。
         layout_height:100dp                                     適当に設定した。
-        layout_constraintLeft_toLeftOf:parent                   Guidelineとテキストビューの左側を合わせる。
-        layout_constraintRight_toRightOf:@id/vertical_guideline 画面右側とテキストビューの右側を合わせる。(つまり右側70%の幅になる)
+        layout_constraintLeft_toLeftOf:@id/vertical_guideline   Guidelineとテキストビューの左側を合わせる。
+        layout_constraintRight_toRightOf:parent                 画面右側とテキストビューの右側を合わせる。(つまり右側70%の幅になる)
      -->
     <TextView
         android:layout_width="0dp"
