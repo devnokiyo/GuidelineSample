@@ -1,3 +1,3 @@
 # GuidelineSample
 以下の記事のサンプルです。  
-https://qiita.com/devnokiyo/items/59d72bf285ee378ef637
+https://qiita.com/items/59d72bf285ee378ef637
